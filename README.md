@@ -1,7 +1,7 @@
 # kratos-web
 Kratos Intelligence Website
 
-## Getting Started
+## Getting Started 
 
 This is a Next.js 14 application built with TypeScript, Tailwind CSS, and shadcn/ui components.
 
