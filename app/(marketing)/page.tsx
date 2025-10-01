@@ -3,10 +3,15 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { ArrowRight, Bot, MessageSquare, Mail, MapPin, Workflow, Send } from 'lucide-react'
+import SeoJsonLd from '@/components/SeoJsonLd'
 
 export default function HomePage() {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.kratosintelligence.com";
   return (
-    <div className="flex flex-col">
+    <>
+      <SeoJsonLd siteUrl={siteUrl} />
+      <div className="flex flex-col">
       {/* Hero Section */}
       <section className="container space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
         <div className="mx-auto flex max-w-[980px] flex-col items-center gap-2 text-center">
@@ -159,6 +164,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
