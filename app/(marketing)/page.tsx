@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { ArrowRight, Bot, MessageSquare, Mail, MapPin, Workflow, Send } from 'lucide-react'
 import SeoJsonLd from '@/components/SeoJsonLd'
+import Hero from '@/components/Hero'
 
 export default function HomePage() {
   const siteUrl =
@@ -11,6 +12,7 @@ export default function HomePage() {
   return (
     <>
       <SeoJsonLd siteUrl={siteUrl} />
+      <Hero />
       <div className="flex flex-col">
       {/* Hero Section */}
       <section className="container space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
